@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a job</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="job-form">
+      <div class="form">
+        <!-- CLIENT DETAILS -->
+
+        <div class="flex-container card">
+          <p>Client details</p>
+          <div class="inputs-row">
+            <input
+              type="text"
+              name="first-name"
+              placeholder="First name"
+              class="small-field"
+            />
+            <input
+              type="text"
+              name="last-name"
+              placeholder="Last name"
+              class="small-field"
+            />
+          </div>
+          <input type="tel" name="phone" placeholder="Phone" />
+          <input type="email" name="email" placeholder="Email(optional)" />
+        </div>
+
+        <!-- JOB DETAILS -->
+
+        <div class="flex-container card">
+          <p>Job details</p>
+          <div class="inputs-row">
+            <select name="area" required class="small-field">
+              <option value="" disabled selected class="selected">
+                Job type
+              </option>
+              <option value="A">Job type 1</option>
+              <option value="B">Job type 2</option>
+              <option value="C">Job type 3</option>
+            </select>
+            <select name="area" required class="small-field">
+              <option value="" disabled selected class="selected">
+                Job source
+              </option>
+              <option value="A">Job source 1</option>
+              <option value="B">Job source 2</option>
+              <option value="C">Job source 3</option>
+            </select>
+          </div>
+          <textarea
+            name="job-description"
+            placeholder="Job description (optional)"
+          ></textarea>
+        </div>
+
+        <!-- SERVICE LOCATION -->
+
+        <div class="flex-container card">
+          <p>Service location</p>
+          <input type="text" name="address" placeholder="Address" />
+          <input type="text" name="city" placeholder="City" />
+          <input type="text" name="state" placeholder="State" />
+          <div class="inputs-row">
+            <input
+              type="tel"
+              name="zip-code"
+              placeholder="Zip code"
+              class="small-field"
+            />
+            <select name="area" required class="small-field">
+              <option value="" disabled selected class="selected">Area</option>
+              <option value="A">Area 1</option>
+              <option value="B">Area 2</option>
+              <option value="C">Area 3</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- SCHEDULED -->
+
+        <div class="flex-container card">
+          <p>Scheduled</p>
+          <input type="date" name="start-date" />
+          <div class="inputs-row">
+            <input
+              type="time"
+              name="start-time"
+              value="08:00"
+              class="small-field"
+            />
+            <input
+              type="time"
+              name="end-time"
+              class="small-field"
+              value="17:00"
+            />
+          </div>
+          <select name="area" required>
+            <option value="" disabled selected class="selected">
+              Test select
+            </option>
+            <option value="A">Test 1</option>
+            <option value="B">Test 2</option>
+            <option value="C">Test 3</option>
+          </select>
+        </div>
+      </div>
+      <div class="flex-container-row">
+        <input type="submit" value="Create job" id="submit" />
+        <input type="button" value="Save info" id="button" />
+      </div>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
