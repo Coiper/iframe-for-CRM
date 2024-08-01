@@ -15,20 +15,27 @@
           <p>Client details</p>
           <div class="inputs-row">
             <input
+              id="first-name"
               type="text"
               name="first-name"
               placeholder="First name"
               class="small-field"
             />
             <input
+              id="last-name"
               type="text"
               name="last-name"
               placeholder="Last name"
               class="small-field"
             />
           </div>
-          <input type="tel" name="phone" placeholder="Phone" />
-          <input type="email" name="email" placeholder="Email(optional)" />
+          <input id="phone" type="tel" name="phone" placeholder="Phone" />
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Email(optional)"
+          />
         </div>
 
         <!-- JOB DETAILS -->
@@ -36,7 +43,7 @@
         <div class="flex-container card">
           <p>Job details</p>
           <div class="inputs-row">
-            <select name="area" required class="small-field">
+            <select id="job-type" name="job-type" required class="small-field">
               <option value="" disabled selected class="selected">
                 Job type
               </option>
@@ -44,7 +51,12 @@
               <option value="B">Job type 2</option>
               <option value="C">Job type 3</option>
             </select>
-            <select name="area" required class="small-field">
+            <select
+              id="job-source"
+              name="job-source"
+              required
+              class="small-field"
+            >
               <option value="" disabled selected class="selected">
                 Job source
               </option>
@@ -54,6 +66,7 @@
             </select>
           </div>
           <textarea
+            id="job-description"
             name="job-description"
             placeholder="Job description (optional)"
           ></textarea>
@@ -63,17 +76,23 @@
 
         <div class="flex-container card">
           <p>Service location</p>
-          <input type="text" name="address" placeholder="Address" />
-          <input type="text" name="city" placeholder="City" />
-          <input type="text" name="state" placeholder="State" />
+          <input
+            id="address"
+            type="text"
+            name="address"
+            placeholder="Address"
+          />
+          <input id="city" type="text" name="city" placeholder="City" />
+          <input id="state" type="text" name="state" placeholder="State" />
           <div class="inputs-row">
             <input
-              type="tel"
+              id="zip-code"
+              type="text"
               name="zip-code"
               placeholder="Zip code"
               class="small-field"
             />
-            <select name="area" required class="small-field">
+            <select id="area" name="area" required class="small-field">
               <option value="" disabled selected class="selected">Area</option>
               <option value="A">Area 1</option>
               <option value="B">Area 2</option>
@@ -86,22 +105,24 @@
 
         <div class="flex-container card">
           <p>Scheduled</p>
-          <input type="date" name="start-date" />
+          <input id="date" type="date" name="start-date" />
           <div class="inputs-row">
             <input
+              id="start-time"
               type="time"
               name="start-time"
               value="08:00"
               class="small-field"
             />
             <input
+              id="end-time"
               type="time"
               name="end-time"
               class="small-field"
               value="17:00"
             />
           </div>
-          <select name="area" required>
+          <select id="area" name="area" required>
             <option value="" disabled selected class="selected">
               Test select
             </option>
